@@ -28,4 +28,20 @@ document.getElementById('add').addEventListener('click', function() {
 document.getElementById("subtract").addEventListener("click", () => {
     const number1 = parseFloat(document.getElementbyId("number1").value) || 0;
     const number2 = parseFloat(document.getElementbyId("number2").value) || 0;
+    const result = subtract(number1, number2)
+    document.getElementById("calculation-result").textContent = result
+})
+
+document.getElementById("multiply").addEventListener("click", () => {
+    const number1 = parseFloat(document.getElementbyId("number1").value) || 0;
+    const number2 = parseFloat(document.getElementbyId("number2").value) || 0;
+    const result = multiply(number1, number2)
+    document.getElementById("calculation-result").textContent = result
+})
+
+document.getElementById("divide").addEventListener("click", () => {
+    const number1 = parseFloat(document.getElementbyId("number1").value) || 0;
+    const number2 = parseFloat(document.getElementbyId("number2").value) || 0;
+    const result = divide(number1, number2)
+    document.getElementById("calculation-result").textContent = result
 })
